@@ -1,0 +1,162 @@
+/* Mengatur dasar tampilan halaman */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+/* Gaya untuk navbar */
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;  /* Untuk memastikan tampilan navbar rapi di layar besar */
+}
+
+nav ul li {
+    display: inline-block;  /* Menggunakan inline-block agar item bisa menyusun secara horizontal */
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Responsif untuk perangkat mobile */
+@media (max-width: 768px) {
+    nav ul {
+        display: block;  /* Mengubah menu menjadi vertikal pada perangkat kecil */
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    nav ul li {
+        display: block;  /* Menyusun item menu secara vertikal */
+        margin: 10px 0;  /* Memberikan jarak antar item */
+    }
+
+    nav ul li a {
+        font-size: 16px;  /* Mengurangi ukuran font di perangkat kecil */
+        padding: 10px 0;  /* Memberikan padding vertikal lebih besar di perangkat mobile */
+    }
+}
+
+
+/* Main content */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+main h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Styling untuk banner dan gambar */
+/* Styling untuk banner dan gambar */
+.banner {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-radius: 10px;
+}
+
+.banner img {
+    width: 100%;
+    max-width: 250px; /* Mengatur gambar agar lebih kecil */
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease; /* Menghapus efek cahaya dan hanya menambahkan transisi transformasi */
+}
+
+.banner img:hover {
+    transform: scale(1.05); /* Membesarkan gambar sedikit saat hover tanpa efek cahaya */
+}
+
+.banner p {
+    font-size: 18px;
+    color: #555;
+}
+
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.footer-content p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.social-icons a img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a:hover img {
+    transform: scale(1.1);
+}
+
+/* Responsif untuk perangkat mobile */
+@media (max-width: 768px) {
+    .footer-content p {
+        font-size: 12px;
+        margin: 5px 0;
+    }
+
+    .footer-content {
+        padding: 0 10px;
+    }
+
+    .social-icons {
+        flex-direction: row; /* Menjaga ikon sosial media sejajar secara horizontal */
+        gap: 15px; /* Jarak antar ikon tetap */
+        margin-top: 15px;
+    }
+
+    .social-icons a img {
+        width: 30px; /* Ukuran ikon tetap sama untuk tampilan mobile */
+        height: 30px;
+    }
+
+    footer {
+        padding: 20px 0;
+    }
+}
+

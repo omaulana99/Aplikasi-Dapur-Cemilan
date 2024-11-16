@@ -1,0 +1,164 @@
+/* Reset default margin dan padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Gaya umum untuk body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4; /* Latar belakang yang terang */
+    color: #333; /* Warna teks */
+    line-height: 1.6;
+}
+
+/* Gaya untuk header */
+header {
+    background-color: #333; /* Latar belakang navbar */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 26px;
+}
+
+/* Gaya untuk navbar */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 8px 16px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #f39c12;
+    border-radius: 5px;
+}
+
+/* Responsif untuk perangkat mobile */
+@media (max-width: 768px) {
+    nav ul {
+        display: block;  /* Ubah ke block untuk tampilan vertikal */
+        width: 100%;  /* Lebar 100% agar memenuhi layar */
+        text-align: center;  /* Menyusun item di tengah */
+        padding: 10px 0;
+    }
+
+    nav ul li {
+        margin: 10px 0;  /* Memberikan jarak antar item di perangkat mobile */
+    }
+
+    nav ul li a {
+        font-size: 18px;  /* Menyesuaikan ukuran font agar lebih besar di mobile */
+        padding: 10px 20px;  /* Memberikan padding lebih agar mudah diklik */
+    }
+}
+
+
+/* Gaya untuk bagian utama */
+main {
+    padding: 20px;
+}
+
+/* Gaya untuk section tentang kami */
+.about-section {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.about-section h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    text-align: center;
+    color: #333;
+}
+
+.about-section p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/* Gaya untuk informasi toko */
+.store-info h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #f39c12; /* Warna untuk heading */
+}
+
+.store-info ul {
+    list-style-type: square;
+    margin-left: 20px;
+}
+
+.store-info ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #333; /* Warna latar belakang footer */
+    color: white; /* Warna teks footer */
+    padding: 20px;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column; /* Menyusun elemen footer secara vertikal */
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.footer-content p {
+    margin: 5px 0; /* Memberikan jarak antar paragraf */
+    text-align: center;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center; /* Menyusun ikon sosial media secara horizontal */
+    gap: 15px; /* Jarak antar ikon */
+}
+
+.social-icons a img {
+    width: 30px; /* Ukuran ikon sosial media */
+    height: auto;
+}
+
+/* Responsif untuk layar dengan lebar maksimal 768px (misalnya untuk tampilan HP) */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column; /* Menyusun teks footer secara vertikal */
+        align-items: center;
+    }
+
+    .social-icons {
+        flex-direction: row; /* Menyusun ikon secara horizontal */
+        justify-content: center;
+    }
+
+    .social-icons a img {
+        width: 25px; /* Ukuran ikon lebih kecil di tampilan HP */
+    }
+}
+
